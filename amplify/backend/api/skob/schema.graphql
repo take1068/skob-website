@@ -1,0 +1,24 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+
+input AMPLIFY { 
+  globalAuthRule: AuthRule = { allow: public } 
+} # FOR TESTING ONLY!
+
+type Corporation @model @auth(rules: [{ allow: owner }]){
+  corpId: Int! @primaryKey
+  corpName: String!
+  alcohlCheckDataList: [AlcohlCheckData] @hasMany(indexName: "byCorpId", fields: ["corpId"])
+}
+
+type AlcohlCheckData @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  userId: String!
+  corpId: Int! @index(name: "byCorpId", sortKeyFields: ["targetDate"])
+  corp: Corporation @belongsTo(fields: ["corpId"])
+  categoryId: Int!
+  data: String
+  photographer: String!
+  description: String
+  targetDate: AWSDate!
+}

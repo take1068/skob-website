@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-skob-dev-173109-authRole",
+      "UnauthRoleArn": "arn:aws:iam::294923484056:role/amplify-skob-dev-173109-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::294923484056:role/amplify-skob-dev-173109-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-skob-dev-173109-deployment",
+      "UnauthRoleName": "amplify-skob-dev-173109-unauthRole",
+      "StackName": "amplify-skob-dev-173109",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:294923484056:stack/amplify-skob-dev-173109/4af46950-9fdb-11ee-8ee6-0ed2303ff05f",
+      "AmplifyAppId": "dttmf65qm59fy",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-skob-dev-173109-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "storage": {
+        "skob3639dd152": {}
+      },
+      "function": {
+        "skob4707e898": {},
+        "skob478ffa01": {}
+      },
+      "auth": {
+        "skob0722938e": {},
+        "userPoolGroups": {}
+      },
+      "api": {
+        "skob": {}
+      }
+    }
+  }
+}

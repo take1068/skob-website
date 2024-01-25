@@ -1,0 +1,13 @@
+{
+  "resourceName": "skob3639dd152",
+  "policyUUID": "639dd152",
+  "bucketName": "skob1a80df5783304717b4bccd0f0ce20b4b",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
